@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Instant username availability check without page reload using JQUERY AJAX</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+<div id="wrapper">
+            <div id="wrapper_heading2">Starts validating immediately as you type...</div>
+            <label>Existing usernames in the database at the moment - <span style="color: blue">kaustavb, john_smith, zinedine_zidane.</span>
+                <br />The above usernames will not be available for choosing, <span style="color: red">and will show in red</span></label>
+            
+            <div id="main">
+                <form action="" method="post" id="form">
+                    <table>
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td><input type="text" name="username" class="textinput" id="username"/></td>
+                            <td><img src="img/pass.png" width="20" height="20"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td><input type="text" name="email" class="textinput" id="email"/></td>
+                            <td><img src="img/pass.png" width="20" height="20"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" name="name" class="textinput" id="name"/></td>
+                            <td><img src="img/pass.png" width="20" height="20"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td><input type="text" name="address" class="textinput" id="address"/></td>
+                            <td><img src="img/pass.png" width="20" height="20"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="submit" class="buttons" id="submit" value="Sign Up"/></td>
+                            <td></td>                            
+                        </tr>
+                    </table>                    
+                </form>   
+                <div id="confirmation">
+                    
+                </div>
+            </div>
+            <label>You can add your custom usernames and test the demo thoroughly!! 
+                <br />Just choose a username that is valid and submit it using the submit button.
+                <br />Once submit is complete, that username will not be available anymore.
+            </label>
+            
+        </div>
+</body>
+</html>
